@@ -12,13 +12,11 @@ namespace ClickerMain
         private int cost;
         private int upgradeValue;
 
-        public Upgrade(string initialName, int initialCost, int initialUpgradeValue)
+        public static void UpgradePlayerDamage(Player player)
         {
-            this.name = initialName;
-            this.cost = initialCost;
-            this.upgradeValue = initialUpgradeValue;
+            int level = player.Level; // Assuming that Player has a GetLevel() method that returns the player's level
+            int newDamage = level + 10;
+            player.Damage = newDamage;
         }
-
-        // Methods to modify upgrade stats and check their state
     }
 }

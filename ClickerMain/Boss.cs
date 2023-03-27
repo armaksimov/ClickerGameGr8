@@ -12,7 +12,7 @@ namespace ClickerMain
         private int damage;
         private int goldReward;
 
-        public BossEnemy(int initialHealth, int initialDamage, int initialGoldReward)
+        public Boss(int initialHealth, int initialDamage, int initialGoldReward)
         {
             this.health = initialHealth;
             this.damage = initialDamage;
