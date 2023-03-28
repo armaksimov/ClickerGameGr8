@@ -8,16 +8,16 @@ namespace ClickerMain
 {
     public class MoneyCaretaker
     {
-        private Stack<MoneyMemento> history = new Stack<MoneyMemento>();
+        private MoneyMemento memento;
 
-        public void Save(MoneyMemento memento)
+        public void Save(Money money)
         {
-            history.Push(memento);
+            memento = money.Save();
         }
 
-        public MoneyMemento Undo()
+        public void Restore(Money money)
         {
-            return history.Pop();
+            money.Restore(memento);
         }
     }
 }
