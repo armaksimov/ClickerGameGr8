@@ -10,12 +10,12 @@ namespace ClickerMain
     {
         private int amount;
 
-        public MoneyMemento(int currentAmount)
+        public MoneyMemento(int Amount)
         {
-            this.amount = currentAmount;
+            amount = Amount;
         }
 
-        public int GetSavedAmount()
+        public int GetAmount()
         {
             return amount;
         }
