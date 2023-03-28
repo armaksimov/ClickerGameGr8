@@ -70,6 +70,7 @@
             this.attackButton.Text = "ATTACK";
             this.attackButton.TextColor = System.Drawing.Color.WhiteSmoke;
             this.attackButton.UseVisualStyleBackColor = false;
+            this.attackButton.Click += new System.EventHandler(this.attackButton_Click);
             // 
             // upgradePowerAttackButton
             // 
@@ -93,6 +94,7 @@
             this.upgradePowerAttackButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.upgradePowerAttackButton.TextColor = System.Drawing.Color.WhiteSmoke;
             this.upgradePowerAttackButton.UseVisualStyleBackColor = false;
+            this.upgradePowerAttackButton.Click += new System.EventHandler(this.upgradePowerAttackButton_Click);
             // 
             // getTimeButton
             // 
@@ -116,6 +118,7 @@
             this.getTimeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.getTimeButton.TextColor = System.Drawing.Color.WhiteSmoke;
             this.getTimeButton.UseVisualStyleBackColor = false;
+            this.getTimeButton.Click += new System.EventHandler(this.getTimeButton_Click);
             // 
             // upgradeAttackButton
             // 
@@ -139,6 +142,7 @@
             this.upgradeAttackButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.upgradeAttackButton.TextColor = System.Drawing.Color.WhiteSmoke;
             this.upgradeAttackButton.UseVisualStyleBackColor = false;
+            this.upgradeAttackButton.Click += new System.EventHandler(this.upgradeAttackButton_Click);
             // 
             // undoButton
             // 
@@ -158,6 +162,7 @@
             this.undoButton.Text = "Undo Last Purchase";
             this.undoButton.TextColor = System.Drawing.Color.WhiteSmoke;
             this.undoButton.UseVisualStyleBackColor = false;
+            this.undoButton.Click += new System.EventHandler(this.undoButton_Click);
             // 
             // pictureBox1
             // 
