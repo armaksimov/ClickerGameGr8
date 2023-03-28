@@ -11,12 +11,27 @@ namespace ClickerMain
         private int attack;
         private int bonus;
 
+        private int _attack;
+        private int _bonus;
+
         public Weapons(int initialAttack, int initialBonus)
         {
-            this.attack = initialAttack;
-            this.bonus = initialBonus;
+            _attack = initialAttack;
+            _bonus = initialBonus;
         }
 
-        // Methods to modify weapon stats and handle attacks
+        public int Attack
+        {
+            get { return _attack; }
+            set { _attack = value; }
+        }
+
+        public int Bonus
+        {
+            get { return _bonus; }
+            set { _bonus = value; }
+        }
+
+        // Methods to handle attacks
     }
 }
