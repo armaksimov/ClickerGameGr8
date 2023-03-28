@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DefeatClickerForm));
             this.attackButton = new ClickerMain.Custom_Buttons.RoundedButton();
             this.upgradePowerAttackButton = new ClickerMain.Custom_Buttons.RoundedButton();
@@ -41,11 +42,13 @@
             this.roundedButton5 = new ClickerMain.Custom_Buttons.RoundedButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.roundedButton6 = new ClickerMain.Custom_Buttons.RoundedButton();
-            this.timerBox = new System.Windows.Forms.Label();
             this.roundedButton7 = new ClickerMain.Custom_Buttons.RoundedButton();
             this.upgradeAttackCost = new System.Windows.Forms.Label();
             this.upgradePowerAttackCost = new System.Windows.Forms.Label();
             this.getTimeCost = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timerLabel = new System.Windows.Forms.Label();
+            this.replayContinueButton = new ClickerMain.Custom_Buttons.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -267,19 +270,6 @@
             this.roundedButton6.TextColor = System.Drawing.Color.WhiteSmoke;
             this.roundedButton6.UseVisualStyleBackColor = false;
             // 
-            // timerBox
-            // 
-            this.timerBox.AutoSize = true;
-            this.timerBox.BackColor = System.Drawing.Color.Transparent;
-            this.timerBox.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.timerBox.ForeColor = System.Drawing.Color.OrangeRed;
-            this.timerBox.Location = new System.Drawing.Point(594, 51);
-            this.timerBox.Name = "timerBox";
-            this.timerBox.Size = new System.Drawing.Size(157, 37);
-            this.timerBox.TabIndex = 15;
-            this.timerBox.Text = "                    ";
-            this.timerBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // roundedButton7
             // 
             this.roundedButton7.BackColor = System.Drawing.Color.Transparent;
@@ -340,15 +330,54 @@
             this.getTimeCost.Text = "        ";
             this.getTimeCost.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timerLabel
+            // 
+            this.timerLabel.AutoSize = true;
+            this.timerLabel.BackColor = System.Drawing.Color.Transparent;
+            this.timerLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timerLabel.ForeColor = System.Drawing.Color.Firebrick;
+            this.timerLabel.Location = new System.Drawing.Point(583, 51);
+            this.timerLabel.Name = "timerLabel";
+            this.timerLabel.Size = new System.Drawing.Size(157, 37);
+            this.timerLabel.TabIndex = 20;
+            this.timerLabel.Text = "                    ";
+            this.timerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // replayContinueButton
+            // 
+            this.replayContinueButton.BackColor = System.Drawing.Color.Lavender;
+            this.replayContinueButton.BackgroundColor = System.Drawing.Color.Lavender;
+            this.replayContinueButton.BorderColor = System.Drawing.Color.Black;
+            this.replayContinueButton.BorderRadius = 20;
+            this.replayContinueButton.BorderSize = 2;
+            this.replayContinueButton.Enabled = false;
+            this.replayContinueButton.FlatAppearance.BorderSize = 0;
+            this.replayContinueButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.replayContinueButton.ForeColor = System.Drawing.Color.White;
+            this.replayContinueButton.Location = new System.Drawing.Point(540, 437);
+            this.replayContinueButton.Name = "replayContinueButton";
+            this.replayContinueButton.Size = new System.Drawing.Size(200, 40);
+            this.replayContinueButton.TabIndex = 21;
+            this.replayContinueButton.Text = "REPLAYBUTTON";
+            this.replayContinueButton.TextColor = System.Drawing.Color.White;
+            this.replayContinueButton.UseVisualStyleBackColor = false;
+            this.replayContinueButton.Visible = false;
+            this.replayContinueButton.Click += new System.EventHandler(this.replayContinueButton_Click);
+            // 
             // DefeatClickerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.replayContinueButton);
+            this.Controls.Add(this.timerLabel);
             this.Controls.Add(this.getTimeCost);
             this.Controls.Add(this.upgradePowerAttackCost);
             this.Controls.Add(this.upgradeAttackCost);
-            this.Controls.Add(this.timerBox);
             this.Controls.Add(this.roundedButton7);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.moneyBox);
@@ -386,10 +415,12 @@
         private Custom_Buttons.RoundedButton roundedButton5;
         private PictureBox pictureBox3;
         private Custom_Buttons.RoundedButton roundedButton6;
-        private Label timerBox;
         private Custom_Buttons.RoundedButton roundedButton7;
         private Label upgradeAttackCost;
         private Label upgradePowerAttackCost;
         private Label getTimeCost;
+        private System.Windows.Forms.Timer timer1;
+        private Label timerLabel;
+        private Custom_Buttons.RoundedButton replayContinueButton;
     }
 }

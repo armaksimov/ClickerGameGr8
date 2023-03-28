@@ -8,9 +8,6 @@ namespace ClickerMain
 {
     public class Weapons
     {
-        private int attack;
-        private int bonus;
-
         private int _attack;
         private int _bonus;
 
@@ -31,7 +28,5 @@ namespace ClickerMain
             get { return _bonus; }
             set { _bonus = value; }
         }
-
-        // Methods to handle attacks
     }
 }

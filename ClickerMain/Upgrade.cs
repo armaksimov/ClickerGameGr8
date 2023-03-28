@@ -8,11 +8,19 @@ namespace ClickerMain
 {
     public class Upgrade
     {
-        public static void UpgradePlayerDamage(Player player)
+        public static void UpgradePlayerAndWeapon(Player player, Weapons weapon)
         {
-            int level = player.Level; // Assuming that Player has a GetLevel() method that returns the player's level
-            int newDamage = level + 10;
-            player.Damage = newDamage;
+            // Increase player's level by 1
+            player.Level += 1;
+
+            // Increase weapon's attack by player's level and bonus by 1
+            weapon.Attack += player.Level;
+            weapon.Bonus += 1;
+
+            // Increase player's damage by weapon's attack
+            player.Damage += weapon.Attack;
+
+            Console.WriteLine("Player upgraded to level " + player.Level + " and weapon damage increased to " + player.Damage);
         }
     }
 }

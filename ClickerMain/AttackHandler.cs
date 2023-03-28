@@ -8,28 +8,21 @@ namespace ClickerMain
 {
     public class AttackHandler
     {
-        private Player _player;
-        private Weapons _weapons;
-
-        public AttackHandler(Player player, Weapons weapons)
+        public int DamageEnemy(Player player, Enemy enemy)
         {
-            _player = player;
-            _weapons = weapons;
-        }
+            int damage = player.Damage;
 
-        public void DamageEnemy(Enemy enemy)
-        {
-            int damage = _player.Damage + _weapons.Attack + _weapons.Bonus;
-            int criticalHitChance = _player.CriticalHitChance;
+            int criticalHitChance = player.CriticalHitChance;
             int roll = new Random().Next(100);
 
             if (roll < criticalHitChance)
             {
                 damage *= 2;
-                Console.WriteLine("Critical hit!");
             }
 
             enemy.TakeDamage(damage);
+
+            return damage;  
         }
     }
 }
