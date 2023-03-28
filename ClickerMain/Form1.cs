@@ -5,8 +5,8 @@ namespace ClickerMain
     {
         private Player player;
         private Enemy enemy;
-        private Weapons weapon;
         private AttackHandler attackHandler;
+        private Weapons weapon;
         private Upgrade upgrade;
         private Money money;
         private MoneyCaretaker moneyCaretaker;
@@ -14,9 +14,16 @@ namespace ClickerMain
 
         private bool replayClicked = false;
 
-        public DefeatClickerForm(int timerInterval, int playerHealth, int damage, int critChance, int level, int enemyHealth, int enemyReward)
+        public DefeatClickerForm(/*int timerInterval, int playerHealth, int damage, int critChance, int level, int enemyHealth, int enemyReward*/)
         {
             InitializeComponent();
+
+            //RunGame(timerInterval, playerHealth, damage, critChance, level, enemyHealth, enemyReward);
+        }
+
+        public void RunGame(DefeatClickerForm frm, int timerInterval, int playerHealth, int damage, int critChance, int level, int enemyHealth, int enemyReward)
+        {
+            Application.Run(frm);
 
             int TI = timerInterval, HP = playerHealth, PD = damage, CC = critChance, PL = level, EL = enemyHealth, ER = enemyReward;
 

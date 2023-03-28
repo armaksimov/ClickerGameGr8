@@ -16,8 +16,9 @@ namespace ClickerMain
             ApplicationConfiguration.Initialize();
             
             int timer = playerHealth / 20;
-            Application.Run(new DefeatClickerForm(timer, playerHealth, playerDamage, critChance, level, enemyLevel, enemyReward));
-            
+
+            DefeatClickerForm frm = new DefeatClickerForm(/*timer, playerHealth, playerDamage, critChance, level, enemyLevel, enemyReward*/);
+            frm.RunGame(frm, timer, playerHealth, playerDamage, critChance, level, enemyLevel, enemyReward);
         }    
     }
 }
