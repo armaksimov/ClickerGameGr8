@@ -22,5 +22,5 @@ namespace ClickerMain
             get { return damage; }
             set { damage = value; }
         }
-
+        }
     }

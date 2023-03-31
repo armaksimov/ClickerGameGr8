@@ -21,8 +21,8 @@ namespace ClickerMain
 
         public int Damage
         {
-            get { return Damage; }
-            set { Damage = value; }
+            get { return base.Damage; }
+            set { base.Damage = value; }
         }
 
         public int CriticalHitChance

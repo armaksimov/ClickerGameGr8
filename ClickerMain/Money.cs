@@ -32,7 +32,10 @@ namespace ClickerMain
 
         public void Restore(MoneyMemento memento)
         {
-            _amount = memento.GetAmount();
+            if (memento != null)
+            {
+                _amount = memento.GetAmount();
+            }
         }
     }
 }
