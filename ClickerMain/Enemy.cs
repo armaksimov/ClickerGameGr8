@@ -6,29 +6,15 @@ using System.Threading.Tasks;
 
 namespace ClickerMain
 {
-    public class Enemy
+    public class Enemy : Entity
     {
-        private int _health;
-        private int _damage;
         private int _goldReward;
 
         public Enemy(int initialHealth, int initialDamage, int initialGoldReward)
         {
-            _health = initialHealth;
-            _damage = initialDamage;
+            Health = initialHealth;
+            Damage = initialDamage;
             _goldReward = initialGoldReward;
-        }
-
-        public int Health
-        {
-            get { return _health; }
-            set { _health = value; }
-        }
-
-        public int Damage
-        {
-            get { return _damage; }
-            set { _damage = value; }
         }
 
         public int GoldReward
@@ -39,8 +25,7 @@ namespace ClickerMain
 
         public void TakeDamage(int amount)
         {
-            _health -= amount;
+            Health -= amount;
+            }
         }
-
-    }
 }

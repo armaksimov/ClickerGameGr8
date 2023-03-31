@@ -9,6 +9,7 @@ namespace ClickerMain
         private Weapons weapon;
         private Upgrade upgrade;
         private Money money;
+        private MoneyMemento moneyMemento;
         private MoneyCaretaker moneyCaretaker;
         private int seconds;
 
@@ -17,6 +18,14 @@ namespace ClickerMain
         public DefeatClickerForm(/*int timerInterval, int playerHealth, int damage, int critChance, int level, int enemyHealth, int enemyReward*/)
         {
             InitializeComponent();
+
+            player = new Player(100, 10, 10, 1);
+            weapon = new Weapons(5, 1);
+            enemy = new Enemy(50, 5, 10);
+            attackHandler = new AttackHandler();
+            money = new Money(0);
+            moneyMemento = new MoneyMemento(0);
+            moneyCaretaker = new MoneyCaretaker();
 
             //RunGame(timerInterval, playerHealth, damage, critChance, level, enemyHealth, enemyReward);
         }
@@ -102,7 +111,7 @@ namespace ClickerMain
 
                 // Update the label
                 moneyBox.Text = " " + money.GetAmount();
-               // attackBox.Text = "Attack: " + weapon.Attack;
+                // attackBox.Text = "Attack: " + weapon.Attack;
             }
         }
 

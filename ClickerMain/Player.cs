@@ -6,31 +6,23 @@ using System.Threading.Tasks;
 
 namespace ClickerMain
 {
-    public class Player
+    public class Player : Entity
     {
-        private int health;
-        private int damage;
         private int criticalHitChance;
         private int level;
 
         public Player(int initialHealth, int initialDamage, int initialCriticalHitChance, int level)
         {
-            this.health = initialHealth;
-            this.damage = initialDamage;
-            this.criticalHitChance = initialCriticalHitChance;
-            this.level = level;
-        }
-
-        public int Health
-        {
-            get { return health; }
-            set { health = value; }
+            Health = initialHealth;
+            Damage = initialDamage;
+            criticalHitChance = initialCriticalHitChance;
+            level = level;
         }
 
         public int Damage
         {
-            get { return damage; }
-            set { damage = value; }
+            get { return Damage; }
+            set { Damage = value; }
         }
 
         public int CriticalHitChance

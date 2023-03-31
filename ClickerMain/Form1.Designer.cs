@@ -28,378 +28,377 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DefeatClickerForm));
-            this.attackButton = new ClickerMain.Custom_Buttons.RoundedButton();
-            this.upgradePowerAttackButton = new ClickerMain.Custom_Buttons.RoundedButton();
-            this.getTimeButton = new ClickerMain.Custom_Buttons.RoundedButton();
-            this.upgradeAttackButton = new ClickerMain.Custom_Buttons.RoundedButton();
-            this.undoButton = new ClickerMain.Custom_Buttons.RoundedButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.healthBar = new System.Windows.Forms.ProgressBar();
-            this.moneyBox = new System.Windows.Forms.Label();
-            this.roundedButton5 = new ClickerMain.Custom_Buttons.RoundedButton();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.roundedButton6 = new ClickerMain.Custom_Buttons.RoundedButton();
-            this.roundedButton7 = new ClickerMain.Custom_Buttons.RoundedButton();
-            this.upgradeAttackCost = new System.Windows.Forms.Label();
-            this.upgradePowerAttackCost = new System.Windows.Forms.Label();
-            this.getTimeCost = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timerLabel = new System.Windows.Forms.Label();
-            this.replayContinueButton = new ClickerMain.Custom_Buttons.RoundedButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.SuspendLayout();
+            attackButton = new Custom_Buttons.RoundedButton();
+            upgradePowerAttackButton = new Custom_Buttons.RoundedButton();
+            getTimeButton = new Custom_Buttons.RoundedButton();
+            upgradeAttackButton = new Custom_Buttons.RoundedButton();
+            undoButton = new Custom_Buttons.RoundedButton();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            healthBar = new ProgressBar();
+            moneyBox = new Label();
+            roundedButton5 = new Custom_Buttons.RoundedButton();
+            pictureBox3 = new PictureBox();
+            roundedButton6 = new Custom_Buttons.RoundedButton();
+            roundedButton7 = new Custom_Buttons.RoundedButton();
+            upgradeAttackCost = new Label();
+            upgradePowerAttackCost = new Label();
+            getTimeCost = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
+            timerLabel = new Label();
+            replayContinueButton = new Custom_Buttons.RoundedButton();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            SuspendLayout();
             // 
             // attackButton
             // 
-            this.attackButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.attackButton.BackColor = System.Drawing.Color.DarkGreen;
-            this.attackButton.BackgroundColor = System.Drawing.Color.DarkGreen;
-            this.attackButton.BorderColor = System.Drawing.Color.Black;
-            this.attackButton.BorderRadius = 50;
-            this.attackButton.BorderSize = 2;
-            this.attackButton.FlatAppearance.BorderSize = 0;
-            this.attackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.attackButton.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.attackButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.attackButton.Location = new System.Drawing.Point(540, 208);
-            this.attackButton.Name = "attackButton";
-            this.attackButton.Size = new System.Drawing.Size(200, 200);
-            this.attackButton.TabIndex = 1;
-            this.attackButton.Text = "ATTACK";
-            this.attackButton.TextColor = System.Drawing.Color.WhiteSmoke;
-            this.attackButton.UseVisualStyleBackColor = false;
-            this.attackButton.Click += new System.EventHandler(this.attackButton_Click);
+            attackButton.Anchor = AnchorStyles.None;
+            attackButton.BackColor = Color.DarkGreen;
+            attackButton.BackgroundColor = Color.DarkGreen;
+            attackButton.BorderColor = Color.Black;
+            attackButton.BorderRadius = 50;
+            attackButton.BorderSize = 2;
+            attackButton.FlatAppearance.BorderSize = 0;
+            attackButton.FlatStyle = FlatStyle.Flat;
+            attackButton.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            attackButton.ForeColor = Color.WhiteSmoke;
+            attackButton.Location = new Point(540, 208);
+            attackButton.Name = "attackButton";
+            attackButton.Size = new Size(200, 200);
+            attackButton.TabIndex = 1;
+            attackButton.Text = "ATTACK";
+            attackButton.TextColor = Color.WhiteSmoke;
+            attackButton.UseVisualStyleBackColor = false;
+            attackButton.Click += attackButton_Click;
             // 
             // upgradePowerAttackButton
             // 
-            this.upgradePowerAttackButton.BackColor = System.Drawing.Color.Orange;
-            this.upgradePowerAttackButton.BackgroundColor = System.Drawing.Color.Orange;
-            this.upgradePowerAttackButton.BorderColor = System.Drawing.Color.Black;
-            this.upgradePowerAttackButton.BorderRadius = 20;
-            this.upgradePowerAttackButton.BorderSize = 2;
-            this.upgradePowerAttackButton.FlatAppearance.BorderSize = 0;
-            this.upgradePowerAttackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.upgradePowerAttackButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.upgradePowerAttackButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.upgradePowerAttackButton.Image = global::ClickerMain.Properties.Resources.coins;
-            this.upgradePowerAttackButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.upgradePowerAttackButton.Location = new System.Drawing.Point(515, 560);
-            this.upgradePowerAttackButton.Name = "upgradePowerAttackButton";
-            this.upgradePowerAttackButton.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.upgradePowerAttackButton.Size = new System.Drawing.Size(250, 75);
-            this.upgradePowerAttackButton.TabIndex = 3;
-            this.upgradePowerAttackButton.Text = "  Upgrade \r\n  Power \r\n  Attack";
-            this.upgradePowerAttackButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.upgradePowerAttackButton.TextColor = System.Drawing.Color.WhiteSmoke;
-            this.upgradePowerAttackButton.UseVisualStyleBackColor = false;
-            this.upgradePowerAttackButton.Click += new System.EventHandler(this.upgradePowerAttackButton_Click);
+            upgradePowerAttackButton.BackColor = Color.Orange;
+            upgradePowerAttackButton.BackgroundColor = Color.Orange;
+            upgradePowerAttackButton.BorderColor = Color.Black;
+            upgradePowerAttackButton.BorderRadius = 20;
+            upgradePowerAttackButton.BorderSize = 2;
+            upgradePowerAttackButton.FlatAppearance.BorderSize = 0;
+            upgradePowerAttackButton.FlatStyle = FlatStyle.Flat;
+            upgradePowerAttackButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            upgradePowerAttackButton.ForeColor = Color.WhiteSmoke;
+            upgradePowerAttackButton.Image = Properties.Resources.coins;
+            upgradePowerAttackButton.ImageAlign = ContentAlignment.MiddleRight;
+            upgradePowerAttackButton.Location = new Point(515, 560);
+            upgradePowerAttackButton.Name = "upgradePowerAttackButton";
+            upgradePowerAttackButton.Padding = new Padding(0, 0, 5, 0);
+            upgradePowerAttackButton.Size = new Size(250, 75);
+            upgradePowerAttackButton.TabIndex = 3;
+            upgradePowerAttackButton.Text = "  Upgrade \r\n  Power \r\n  Attack";
+            upgradePowerAttackButton.TextAlign = ContentAlignment.MiddleLeft;
+            upgradePowerAttackButton.TextColor = Color.WhiteSmoke;
+            upgradePowerAttackButton.UseVisualStyleBackColor = false;
+            upgradePowerAttackButton.Click += upgradePowerAttackButton_Click;
             // 
             // getTimeButton
             // 
-            this.getTimeButton.BackColor = System.Drawing.Color.Orange;
-            this.getTimeButton.BackgroundColor = System.Drawing.Color.Orange;
-            this.getTimeButton.BorderColor = System.Drawing.Color.Black;
-            this.getTimeButton.BorderRadius = 20;
-            this.getTimeButton.BorderSize = 2;
-            this.getTimeButton.FlatAppearance.BorderSize = 0;
-            this.getTimeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.getTimeButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.getTimeButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.getTimeButton.Image = global::ClickerMain.Properties.Resources.coins;
-            this.getTimeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.getTimeButton.Location = new System.Drawing.Point(930, 560);
-            this.getTimeButton.Name = "getTimeButton";
-            this.getTimeButton.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.getTimeButton.Size = new System.Drawing.Size(250, 75);
-            this.getTimeButton.TabIndex = 4;
-            this.getTimeButton.Text = "  Get\r\n  Time";
-            this.getTimeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.getTimeButton.TextColor = System.Drawing.Color.WhiteSmoke;
-            this.getTimeButton.UseVisualStyleBackColor = false;
-            this.getTimeButton.Click += new System.EventHandler(this.getTimeButton_Click);
+            getTimeButton.BackColor = Color.Orange;
+            getTimeButton.BackgroundColor = Color.Orange;
+            getTimeButton.BorderColor = Color.Black;
+            getTimeButton.BorderRadius = 20;
+            getTimeButton.BorderSize = 2;
+            getTimeButton.FlatAppearance.BorderSize = 0;
+            getTimeButton.FlatStyle = FlatStyle.Flat;
+            getTimeButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            getTimeButton.ForeColor = Color.WhiteSmoke;
+            getTimeButton.Image = Properties.Resources.coins;
+            getTimeButton.ImageAlign = ContentAlignment.MiddleRight;
+            getTimeButton.Location = new Point(930, 560);
+            getTimeButton.Name = "getTimeButton";
+            getTimeButton.Padding = new Padding(0, 0, 5, 0);
+            getTimeButton.Size = new Size(250, 75);
+            getTimeButton.TabIndex = 4;
+            getTimeButton.Text = "  Get\r\n  Time";
+            getTimeButton.TextAlign = ContentAlignment.MiddleLeft;
+            getTimeButton.TextColor = Color.WhiteSmoke;
+            getTimeButton.UseVisualStyleBackColor = false;
+            getTimeButton.Click += getTimeButton_Click;
             // 
             // upgradeAttackButton
             // 
-            this.upgradeAttackButton.BackColor = System.Drawing.Color.Orange;
-            this.upgradeAttackButton.BackgroundColor = System.Drawing.Color.Orange;
-            this.upgradeAttackButton.BorderColor = System.Drawing.Color.Black;
-            this.upgradeAttackButton.BorderRadius = 20;
-            this.upgradeAttackButton.BorderSize = 2;
-            this.upgradeAttackButton.FlatAppearance.BorderSize = 0;
-            this.upgradeAttackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.upgradeAttackButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.upgradeAttackButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.upgradeAttackButton.Image = global::ClickerMain.Properties.Resources.coins;
-            this.upgradeAttackButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.upgradeAttackButton.Location = new System.Drawing.Point(100, 560);
-            this.upgradeAttackButton.Name = "upgradeAttackButton";
-            this.upgradeAttackButton.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            this.upgradeAttackButton.Size = new System.Drawing.Size(250, 75);
-            this.upgradeAttackButton.TabIndex = 5;
-            this.upgradeAttackButton.Text = "  Upgrade\r\n  Attack";
-            this.upgradeAttackButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.upgradeAttackButton.TextColor = System.Drawing.Color.WhiteSmoke;
-            this.upgradeAttackButton.UseVisualStyleBackColor = false;
-            this.upgradeAttackButton.Click += new System.EventHandler(this.upgradeAttackButton_Click);
+            upgradeAttackButton.BackColor = Color.Orange;
+            upgradeAttackButton.BackgroundColor = Color.Orange;
+            upgradeAttackButton.BorderColor = Color.Black;
+            upgradeAttackButton.BorderRadius = 20;
+            upgradeAttackButton.BorderSize = 2;
+            upgradeAttackButton.FlatAppearance.BorderSize = 0;
+            upgradeAttackButton.FlatStyle = FlatStyle.Flat;
+            upgradeAttackButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            upgradeAttackButton.ForeColor = Color.WhiteSmoke;
+            upgradeAttackButton.Image = Properties.Resources.coins;
+            upgradeAttackButton.ImageAlign = ContentAlignment.MiddleRight;
+            upgradeAttackButton.Location = new Point(100, 560);
+            upgradeAttackButton.Name = "upgradeAttackButton";
+            upgradeAttackButton.Padding = new Padding(0, 0, 5, 0);
+            upgradeAttackButton.Size = new Size(250, 75);
+            upgradeAttackButton.TabIndex = 5;
+            upgradeAttackButton.Text = "  Upgrade\r\n  Attack";
+            upgradeAttackButton.TextAlign = ContentAlignment.MiddleLeft;
+            upgradeAttackButton.TextColor = Color.WhiteSmoke;
+            upgradeAttackButton.UseVisualStyleBackColor = false;
+            upgradeAttackButton.Click += upgradeAttackButton_Click;
             // 
             // undoButton
             // 
-            this.undoButton.BackColor = System.Drawing.Color.Orange;
-            this.undoButton.BackgroundColor = System.Drawing.Color.Orange;
-            this.undoButton.BorderColor = System.Drawing.Color.Black;
-            this.undoButton.BorderRadius = 20;
-            this.undoButton.BorderSize = 2;
-            this.undoButton.FlatAppearance.BorderSize = 0;
-            this.undoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.undoButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.undoButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.undoButton.Location = new System.Drawing.Point(515, 501);
-            this.undoButton.Name = "undoButton";
-            this.undoButton.Size = new System.Drawing.Size(250, 40);
-            this.undoButton.TabIndex = 6;
-            this.undoButton.Text = "Undo Last Purchase";
-            this.undoButton.TextColor = System.Drawing.Color.WhiteSmoke;
-            this.undoButton.UseVisualStyleBackColor = false;
-            this.undoButton.Click += new System.EventHandler(this.undoButton_Click);
+            undoButton.BackColor = Color.Orange;
+            undoButton.BackgroundColor = Color.Orange;
+            undoButton.BorderColor = Color.Black;
+            undoButton.BorderRadius = 20;
+            undoButton.BorderSize = 2;
+            undoButton.FlatAppearance.BorderSize = 0;
+            undoButton.FlatStyle = FlatStyle.Flat;
+            undoButton.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            undoButton.ForeColor = Color.WhiteSmoke;
+            undoButton.Location = new Point(515, 501);
+            undoButton.Name = "undoButton";
+            undoButton.Size = new Size(250, 40);
+            undoButton.TabIndex = 6;
+            undoButton.Text = "Undo Last Purchase";
+            undoButton.TextColor = Color.WhiteSmoke;
+            undoButton.UseVisualStyleBackColor = false;
+            undoButton.Click += undoButton_Click;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.ErrorImage = global::ClickerMain.Properties.Resources.Opponent;
-            this.pictureBox1.InitialImage = global::ClickerMain.Properties.Resources.Opponent;
-            this.pictureBox1.Location = new System.Drawing.Point(930, 143);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 330);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox1.ErrorImage = Properties.Resources.Opponent;
+            pictureBox1.InitialImage = Properties.Resources.Opponent;
+            pictureBox1.Location = new Point(930, 143);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(250, 330);
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::ClickerMain.Properties.Resources._5f2100e27b0f099410ee48ff11c9838d;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.ErrorImage = global::ClickerMain.Properties.Resources._5f2100e27b0f099410ee48ff11c9838d;
-            this.pictureBox2.InitialImage = global::ClickerMain.Properties.Resources._5f2100e27b0f099410ee48ff11c9838d;
-            this.pictureBox2.Location = new System.Drawing.Point(100, 143);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(250, 330);
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.BackgroundImage = Properties.Resources._5f2100e27b0f099410ee48ff11c9838d;
+            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox2.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox2.ErrorImage = Properties.Resources._5f2100e27b0f099410ee48ff11c9838d;
+            pictureBox2.InitialImage = Properties.Resources._5f2100e27b0f099410ee48ff11c9838d;
+            pictureBox2.Location = new Point(100, 143);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(250, 330);
+            pictureBox2.TabIndex = 8;
+            pictureBox2.TabStop = false;
             // 
             // healthBar
             // 
-            this.healthBar.BackColor = System.Drawing.Color.Red;
-            this.healthBar.ForeColor = System.Drawing.Color.White;
-            this.healthBar.Location = new System.Drawing.Point(1001, 55);
-            this.healthBar.Name = "healthBar";
-            this.healthBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.healthBar.Size = new System.Drawing.Size(170, 30);
-            this.healthBar.TabIndex = 9;
+            healthBar.BackColor = Color.Red;
+            healthBar.ForeColor = Color.White;
+            healthBar.Location = new Point(1001, 55);
+            healthBar.Name = "healthBar";
+            healthBar.RightToLeft = RightToLeft.Yes;
+            healthBar.Size = new Size(170, 30);
+            healthBar.TabIndex = 9;
             // 
             // moneyBox
             // 
-            this.moneyBox.AutoSize = true;
-            this.moneyBox.BackColor = System.Drawing.Color.Transparent;
-            this.moneyBox.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.moneyBox.Location = new System.Drawing.Point(185, 51);
-            this.moneyBox.Name = "moneyBox";
-            this.moneyBox.Size = new System.Drawing.Size(157, 37);
-            this.moneyBox.TabIndex = 11;
-            this.moneyBox.Text = "                    ";
-            this.moneyBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            moneyBox.AutoSize = true;
+            moneyBox.BackColor = Color.Transparent;
+            moneyBox.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            moneyBox.Location = new Point(185, 51);
+            moneyBox.Name = "moneyBox";
+            moneyBox.Size = new Size(157, 37);
+            moneyBox.TabIndex = 11;
+            moneyBox.Text = "                    ";
+            moneyBox.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // roundedButton5
             // 
-            this.roundedButton5.BackColor = System.Drawing.Color.Transparent;
-            this.roundedButton5.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundedButton5.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton5.BorderRadius = 20;
-            this.roundedButton5.BorderSize = 2;
-            this.roundedButton5.Enabled = false;
-            this.roundedButton5.FlatAppearance.BorderSize = 0;
-            this.roundedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.roundedButton5.Image = global::ClickerMain.Properties.Resources.coins;
-            this.roundedButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.roundedButton5.Location = new System.Drawing.Point(100, 30);
-            this.roundedButton5.Name = "roundedButton5";
-            this.roundedButton5.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.roundedButton5.Size = new System.Drawing.Size(250, 75);
-            this.roundedButton5.TabIndex = 12;
-            this.roundedButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.roundedButton5.TextColor = System.Drawing.Color.WhiteSmoke;
-            this.roundedButton5.UseVisualStyleBackColor = false;
+            roundedButton5.BackColor = Color.Transparent;
+            roundedButton5.BackgroundColor = Color.Transparent;
+            roundedButton5.BorderColor = Color.Black;
+            roundedButton5.BorderRadius = 20;
+            roundedButton5.BorderSize = 2;
+            roundedButton5.Enabled = false;
+            roundedButton5.FlatAppearance.BorderSize = 0;
+            roundedButton5.FlatStyle = FlatStyle.Flat;
+            roundedButton5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton5.ForeColor = Color.WhiteSmoke;
+            roundedButton5.Image = Properties.Resources.coins;
+            roundedButton5.ImageAlign = ContentAlignment.MiddleLeft;
+            roundedButton5.Location = new Point(100, 30);
+            roundedButton5.Name = "roundedButton5";
+            roundedButton5.Padding = new Padding(5, 0, 0, 0);
+            roundedButton5.Size = new Size(250, 75);
+            roundedButton5.TabIndex = 12;
+            roundedButton5.TextAlign = ContentAlignment.MiddleLeft;
+            roundedButton5.TextColor = Color.WhiteSmoke;
+            roundedButton5.UseVisualStyleBackColor = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::ClickerMain.Properties.Resources.heart;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(936, 44);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 50);
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.BackgroundImage = Properties.Resources.heart;
+            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox3.Location = new Point(936, 44);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(60, 50);
+            pictureBox3.TabIndex = 13;
+            pictureBox3.TabStop = false;
             // 
             // roundedButton6
             // 
-            this.roundedButton6.BackColor = System.Drawing.Color.Transparent;
-            this.roundedButton6.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundedButton6.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton6.BorderRadius = 20;
-            this.roundedButton6.BorderSize = 2;
-            this.roundedButton6.Enabled = false;
-            this.roundedButton6.FlatAppearance.BorderSize = 0;
-            this.roundedButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton6.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.roundedButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.roundedButton6.Location = new System.Drawing.Point(930, 30);
-            this.roundedButton6.Name = "roundedButton6";
-            this.roundedButton6.Size = new System.Drawing.Size(250, 75);
-            this.roundedButton6.TabIndex = 14;
-            this.roundedButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.roundedButton6.TextColor = System.Drawing.Color.WhiteSmoke;
-            this.roundedButton6.UseVisualStyleBackColor = false;
+            roundedButton6.BackColor = Color.Transparent;
+            roundedButton6.BackgroundColor = Color.Transparent;
+            roundedButton6.BorderColor = Color.Black;
+            roundedButton6.BorderRadius = 20;
+            roundedButton6.BorderSize = 2;
+            roundedButton6.Enabled = false;
+            roundedButton6.FlatAppearance.BorderSize = 0;
+            roundedButton6.FlatStyle = FlatStyle.Flat;
+            roundedButton6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton6.ForeColor = Color.WhiteSmoke;
+            roundedButton6.ImageAlign = ContentAlignment.MiddleLeft;
+            roundedButton6.Location = new Point(930, 30);
+            roundedButton6.Name = "roundedButton6";
+            roundedButton6.Size = new Size(250, 75);
+            roundedButton6.TabIndex = 14;
+            roundedButton6.TextAlign = ContentAlignment.MiddleLeft;
+            roundedButton6.TextColor = Color.WhiteSmoke;
+            roundedButton6.UseVisualStyleBackColor = false;
             // 
             // roundedButton7
             // 
-            this.roundedButton7.BackColor = System.Drawing.Color.Transparent;
-            this.roundedButton7.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundedButton7.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton7.BorderRadius = 20;
-            this.roundedButton7.BorderSize = 2;
-            this.roundedButton7.Enabled = false;
-            this.roundedButton7.FlatAppearance.BorderSize = 0;
-            this.roundedButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.roundedButton7.Image = global::ClickerMain.Properties.Resources.timer1;
-            this.roundedButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.roundedButton7.Location = new System.Drawing.Point(515, 30);
-            this.roundedButton7.Margin = new System.Windows.Forms.Padding(15, 3, 3, 3);
-            this.roundedButton7.Name = "roundedButton7";
-            this.roundedButton7.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.roundedButton7.Size = new System.Drawing.Size(250, 75);
-            this.roundedButton7.TabIndex = 16;
-            this.roundedButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.roundedButton7.TextColor = System.Drawing.Color.WhiteSmoke;
-            this.roundedButton7.UseVisualStyleBackColor = false;
+            roundedButton7.BackColor = Color.Transparent;
+            roundedButton7.BackgroundColor = Color.Transparent;
+            roundedButton7.BorderColor = Color.Black;
+            roundedButton7.BorderRadius = 20;
+            roundedButton7.BorderSize = 2;
+            roundedButton7.Enabled = false;
+            roundedButton7.FlatAppearance.BorderSize = 0;
+            roundedButton7.FlatStyle = FlatStyle.Flat;
+            roundedButton7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton7.ForeColor = Color.WhiteSmoke;
+            roundedButton7.Image = Properties.Resources.timer1;
+            roundedButton7.ImageAlign = ContentAlignment.MiddleLeft;
+            roundedButton7.Location = new Point(515, 30);
+            roundedButton7.Margin = new Padding(15, 3, 3, 3);
+            roundedButton7.Name = "roundedButton7";
+            roundedButton7.Padding = new Padding(5, 0, 0, 0);
+            roundedButton7.Size = new Size(250, 75);
+            roundedButton7.TabIndex = 16;
+            roundedButton7.TextAlign = ContentAlignment.MiddleLeft;
+            roundedButton7.TextColor = Color.WhiteSmoke;
+            roundedButton7.UseVisualStyleBackColor = false;
             // 
             // upgradeAttackCost
             // 
-            this.upgradeAttackCost.AutoSize = true;
-            this.upgradeAttackCost.BackColor = System.Drawing.Color.Orange;
-            this.upgradeAttackCost.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.upgradeAttackCost.Location = new System.Drawing.Point(187, 579);
-            this.upgradeAttackCost.Name = "upgradeAttackCost";
-            this.upgradeAttackCost.Size = new System.Drawing.Size(73, 37);
-            this.upgradeAttackCost.TabIndex = 17;
-            this.upgradeAttackCost.Text = "        ";
-            this.upgradeAttackCost.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            upgradeAttackCost.AutoSize = true;
+            upgradeAttackCost.BackColor = Color.Orange;
+            upgradeAttackCost.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            upgradeAttackCost.Location = new Point(187, 579);
+            upgradeAttackCost.Name = "upgradeAttackCost";
+            upgradeAttackCost.Size = new Size(73, 37);
+            upgradeAttackCost.TabIndex = 17;
+            upgradeAttackCost.Text = "        ";
+            upgradeAttackCost.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // upgradePowerAttackCost
             // 
-            this.upgradePowerAttackCost.AutoSize = true;
-            this.upgradePowerAttackCost.BackColor = System.Drawing.Color.Orange;
-            this.upgradePowerAttackCost.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.upgradePowerAttackCost.Location = new System.Drawing.Point(606, 580);
-            this.upgradePowerAttackCost.Name = "upgradePowerAttackCost";
-            this.upgradePowerAttackCost.Size = new System.Drawing.Size(73, 37);
-            this.upgradePowerAttackCost.TabIndex = 18;
-            this.upgradePowerAttackCost.Text = "        ";
-            this.upgradePowerAttackCost.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            upgradePowerAttackCost.AutoSize = true;
+            upgradePowerAttackCost.BackColor = Color.Orange;
+            upgradePowerAttackCost.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            upgradePowerAttackCost.Location = new Point(606, 580);
+            upgradePowerAttackCost.Name = "upgradePowerAttackCost";
+            upgradePowerAttackCost.Size = new Size(73, 37);
+            upgradePowerAttackCost.TabIndex = 18;
+            upgradePowerAttackCost.Text = "        ";
+            upgradePowerAttackCost.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // getTimeCost
             // 
-            this.getTimeCost.AutoSize = true;
-            this.getTimeCost.BackColor = System.Drawing.Color.Orange;
-            this.getTimeCost.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.getTimeCost.Location = new System.Drawing.Point(1010, 579);
-            this.getTimeCost.Name = "getTimeCost";
-            this.getTimeCost.Size = new System.Drawing.Size(73, 37);
-            this.getTimeCost.TabIndex = 19;
-            this.getTimeCost.Text = "        ";
-            this.getTimeCost.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            getTimeCost.AutoSize = true;
+            getTimeCost.BackColor = Color.Orange;
+            getTimeCost.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            getTimeCost.Location = new Point(1010, 579);
+            getTimeCost.Name = "getTimeCost";
+            getTimeCost.Size = new Size(73, 37);
+            getTimeCost.TabIndex = 19;
+            getTimeCost.Text = "        ";
+            getTimeCost.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            timer1.Tick += timer1_Tick;
             // 
             // timerLabel
             // 
-            this.timerLabel.AutoSize = true;
-            this.timerLabel.BackColor = System.Drawing.Color.Transparent;
-            this.timerLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.timerLabel.ForeColor = System.Drawing.Color.Firebrick;
-            this.timerLabel.Location = new System.Drawing.Point(583, 51);
-            this.timerLabel.Name = "timerLabel";
-            this.timerLabel.Size = new System.Drawing.Size(157, 37);
-            this.timerLabel.TabIndex = 20;
-            this.timerLabel.Text = "                    ";
-            this.timerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            timerLabel.AutoSize = true;
+            timerLabel.BackColor = Color.Transparent;
+            timerLabel.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            timerLabel.ForeColor = Color.Firebrick;
+            timerLabel.Location = new Point(583, 51);
+            timerLabel.Name = "timerLabel";
+            timerLabel.Size = new Size(157, 37);
+            timerLabel.TabIndex = 20;
+            timerLabel.Text = "                    ";
+            timerLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // replayContinueButton
             // 
-            this.replayContinueButton.BackColor = System.Drawing.Color.Lavender;
-            this.replayContinueButton.BackgroundColor = System.Drawing.Color.Lavender;
-            this.replayContinueButton.BorderColor = System.Drawing.Color.Black;
-            this.replayContinueButton.BorderRadius = 20;
-            this.replayContinueButton.BorderSize = 2;
-            this.replayContinueButton.Enabled = false;
-            this.replayContinueButton.FlatAppearance.BorderSize = 0;
-            this.replayContinueButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.replayContinueButton.ForeColor = System.Drawing.Color.White;
-            this.replayContinueButton.Location = new System.Drawing.Point(540, 437);
-            this.replayContinueButton.Name = "replayContinueButton";
-            this.replayContinueButton.Size = new System.Drawing.Size(200, 40);
-            this.replayContinueButton.TabIndex = 21;
-            this.replayContinueButton.Text = "REPLAYBUTTON";
-            this.replayContinueButton.TextColor = System.Drawing.Color.White;
-            this.replayContinueButton.UseVisualStyleBackColor = false;
-            this.replayContinueButton.Visible = false;
-            this.replayContinueButton.Click += new System.EventHandler(this.replayContinueButton_Click);
+            replayContinueButton.BackColor = Color.Lavender;
+            replayContinueButton.BackgroundColor = Color.Lavender;
+            replayContinueButton.BorderColor = Color.Black;
+            replayContinueButton.BorderRadius = 20;
+            replayContinueButton.BorderSize = 2;
+            replayContinueButton.Enabled = false;
+            replayContinueButton.FlatAppearance.BorderSize = 0;
+            replayContinueButton.FlatStyle = FlatStyle.Flat;
+            replayContinueButton.ForeColor = Color.White;
+            replayContinueButton.Location = new Point(540, 437);
+            replayContinueButton.Name = "replayContinueButton";
+            replayContinueButton.Size = new Size(200, 40);
+            replayContinueButton.TabIndex = 21;
+            replayContinueButton.Text = "REPLAYBUTTON";
+            replayContinueButton.TextColor = Color.White;
+            replayContinueButton.UseVisualStyleBackColor = false;
+            replayContinueButton.Visible = false;
+            replayContinueButton.Click += replayContinueButton_Click;
             // 
             // DefeatClickerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.replayContinueButton);
-            this.Controls.Add(this.timerLabel);
-            this.Controls.Add(this.getTimeCost);
-            this.Controls.Add(this.upgradePowerAttackCost);
-            this.Controls.Add(this.upgradeAttackCost);
-            this.Controls.Add(this.roundedButton7);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.moneyBox);
-            this.Controls.Add(this.healthBar);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.undoButton);
-            this.Controls.Add(this.upgradeAttackButton);
-            this.Controls.Add(this.getTimeButton);
-            this.Controls.Add(this.upgradePowerAttackButton);
-            this.Controls.Add(this.attackButton);
-            this.Controls.Add(this.roundedButton5);
-            this.Controls.Add(this.roundedButton6);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "DefeatClickerForm";
-            this.Text = "DEFEAT CLICKER";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1264, 681);
+            Controls.Add(replayContinueButton);
+            Controls.Add(timerLabel);
+            Controls.Add(getTimeCost);
+            Controls.Add(upgradePowerAttackCost);
+            Controls.Add(upgradeAttackCost);
+            Controls.Add(roundedButton7);
+            Controls.Add(pictureBox3);
+            Controls.Add(moneyBox);
+            Controls.Add(healthBar);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
+            Controls.Add(undoButton);
+            Controls.Add(upgradeAttackButton);
+            Controls.Add(getTimeButton);
+            Controls.Add(upgradePowerAttackButton);
+            Controls.Add(attackButton);
+            Controls.Add(roundedButton5);
+            Controls.Add(roundedButton6);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "DefeatClickerForm";
+            Text = "DEFEAT CLICKER";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
